@@ -83,9 +83,9 @@ userForm.addEventListener("submit", (e) => {
         return;
     } 
     
-    else if (inputUserAge.value < 10 && inputUserAge > 70) {
+    else if (inputUserAge.value < 10 || inputUserAge.value > 70) {
         
-        alert('متاسفانه سن شما برای ثبت اطلاعات کافی نیست (سن بیشتر از 10 سال و کمتر از 70 سال باشد)');
+        alert('متاسفانه سن شما برای ثبت اطلاعات کافی نیست (سن ، بیشتر از 10 سال و کمتر از 70 سال باشد)');
         return;
     } 
     
@@ -143,3 +143,4 @@ searchBox.addEventListener("input", (e) => {
     displayUsers(filtered);
 
 });
+
